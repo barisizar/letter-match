@@ -1,9 +1,9 @@
 # Dependencies
-/letter-match/node_modules
+/letter-match-frontend/node_modules
 /letter-match-backend/node_modules
 
 # Production build
-/letter-match/build
+/letter-match-frontend/build
 
 # Misc
 .DS_Store

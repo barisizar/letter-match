@@ -46,26 +46,26 @@ Letter Match is a real-time multiplayer word game where players compete to form 
 1. Clone the repository:
    ```
    git clone https://github.com/yourusername/letter-match.git
-   cd letter-match
+   cd letter-letter-match-frontend
    ```
 
 2. Install dependencies for both frontend and backend:
    ```
    cd letter-match-backend
    npm install
-   cd ../letter-match
+   cd ../letter-match-frontend
    npm install
    ```
 
 3. Start the backend server:
    ```
-   cd letter-match-backend
+   cd letter-match-frontend-backend
    npm start
    ```
 
 4. In a new terminal, start the frontend development server:
    ```
-   cd letter-match
+   cd letter-match-frontend
    npm start
    ```
 
@@ -84,7 +84,7 @@ Letter Match is a real-time multiplayer word game where players compete to form 
 
 ## Project Structure
 
-- `letter-match/`: Frontend React application
+- `letter-match-frontend/`: Frontend React application
   - `src/`
     - `LetterMatch.js`: Main game component
     - `Lobby.js`: Lobby component for room management
