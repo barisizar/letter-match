@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.letter-match-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.game-status {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3498db;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.2em;
+}
+
+.current-player, .timer {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.game-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.previous-words, .player-scores {
+  width: 220px;
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.previous-words h3, .player-scores h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.previous-words ul, .player-scores ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.previous-words li, .player-score {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 3px;
+  background-color: #34495e;
+  padding: 3px;
+  border-radius: 8px;
+  margin: 0 20px;
+}
+
+.grid-button {
+  width: 100%;
+  aspect-ratio: 1;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  background-color: #ecf0f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.grid-button:hover:not(:disabled):not(.disappeared) {
+  background-color: #3498db;
+  color: white;
+}
+
+.grid-button.selected {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.grid-button.disappeared {
+  background-color: #bdc3c7;
+  color: #7f8c8d;
+  cursor: default;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.selected-word {
+  font-size: 1.5em;
+  margin-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+}
+
+.button-primary {
+  padding: 12px 24px;
+  font-size: 1em;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.button-primary:hover:not(:disabled) {
+  background-color: #27ae60;
+}
+
+.button-primary:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 1.1em;
+}
